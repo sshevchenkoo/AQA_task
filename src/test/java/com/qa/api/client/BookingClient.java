@@ -33,7 +33,8 @@ public class BookingClient {
                 .addHeader("Accept", "application/json")
                 .setConfig(RestAssuredConfig.config()
                         .objectMapperConfig(isoDatesMapperConfig())
-                        .logConfig(LogConfig.logConfig().enableLoggingOfRequestAndResponseIfValidationFails(LogDetail.ALL)))
+                        .logConfig(LogConfig.logConfig()
+                                .enableLoggingOfRequestAndResponseIfValidationFails(LogDetail.ALL)))
                 .addFilter(new AllureRestAssured())
                 .build();
     }

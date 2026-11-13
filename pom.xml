@@ -20,6 +20,7 @@
         <assertj.version>3.27.7</assertj.version>
         <jackson.version>2.23.0</jackson.version>
         <allure.version>2.35.6</allure.version>
+        <allure-report.version>2.46.2</allure-report.version>
         <slf4j.version>2.0.20</slf4j.version>
 
         <maven-compiler-plugin.version>3.16.0</maven-compiler-plugin.version>
@@ -130,7 +131,7 @@
                 <artifactId>allure-maven</artifactId>
                 <version>${allure-maven.version}</version>
                 <configuration>
-                    <reportVersion>${allure.version}</reportVersion>
+                    <reportVersion>${allure-report.version}</reportVersion>
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                 </configuration>
             </plugin>
